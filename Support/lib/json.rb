@@ -219,9 +219,7 @@ require 'json/common'
 module JSON
   require 'json/version'
 
-  if VARIANT_BINARY
-    require 'json/ext'
-  else
+  if true
     begin
       require 'json/ext'
     rescue LoadError
