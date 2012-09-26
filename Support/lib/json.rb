@@ -218,14 +218,6 @@ require 'json/common'
 #
 module JSON
   require 'json/version'
-
-  if true
-    begin
-      require 'json/ext'
-    rescue LoadError
-      require 'json/pure'
-    end
-  end
-
-  JSON_LOADED = true
+  require 'json/pure'
+  #JSON_LOADED = true
 end
